@@ -37,13 +37,13 @@ Provide a simple but engaging user experience for someone interested in playing 
 
 #### User stories
 
-* "As a trivia game fan I expect to be appropriately challenged by the questions"
-* "As a user I expect to be able to navigate straight into a game from the landing page"
-* "As a competitive player I expect to be able to log my scores and compare them with those of others"
-* "As a user I expect real time feedback to my input when I interact with the site"
-* "As a user I expect to be able to play multiple times with a refreshed set of questions each time"
-* "As a user I expect to have the option to leave a game in the middle"
-* "As a user I expect to have the option to play again immediately when I finish"
+* *"As a trivia game fan I expect to be appropriately challenged by the questions"*
+* *"As a user I expect to be able to navigate straight into a game from the landing page"*
+* *"As a competitive player I expect to be able to log my scores and compare them with those of others"*
+* *"As a user I expect real time feedback to my input when I interact with the site"*
+* *"As a user I expect to be able to play multiple times with a refreshed set of questions each time"*
+* *"As a user I expect to have the option to leave a game in the middle"*
+* *"As a user I expect to have the option to play again immediately when I finish"*
 
 ---
 
@@ -101,7 +101,8 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 ## Tools
 
 * [Google Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools)
-
+* [CSS Gradient](https://cssgradient.io/)
+* [Particles](https://marcbruederlin.github.io/particles.js/)
 
 ---
 
