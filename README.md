@@ -26,7 +26,7 @@ True or False is a simple quiz app presenting the user with a question. Is it tr
 
 ### Project Goals
 
-Provide a simple but engaging user experience for someone interested in playing a trivia game.
+Provide a simple but engaging user experience for someone interested in playing a general knowledge trivia game.
 
 #### User goals
 
@@ -52,6 +52,7 @@ Provide a simple but engaging user experience for someone interested in playing 
 * User interface situated centrally in the screen leaving lots of space outside of it to be used by background effect.
 * [Particle](https://marcbruederlin.github.io/particles.js/) effect in the background to create interesting visual for the user reminiscent of DNA structures and sci-fi style interfaces.
 * Particle effect responds to user input to increase feeling of interactivity. Speed and size swell with correct or incorrect answers.
+* Less is more approach to avoid cluttering the UI with unnecessary features and icons.
 * Indigo dye #1a4e6e and Honolulu blue #2c6e96 combine to make a [gradient background](https://cssgradient.io/)
 * White #FFFFFF for the particle effect and font color.
 * [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?sort=popularity&preview.text=Question+number+1+2+3+4+5+6&preview.text_type=custom&sidebar.open&selection.family=Roboto+Mono:wght@300) for font family.
@@ -69,11 +70,17 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ### Features
 
-* 
+* Main menu with play again button and high scores button.
+* Game section featuring [API generated questions](https://opentdb.com/) presenting user with clickable option between true or false.
+* Particle effect background responds to user input.
+* Mousing over buttons to give hover effect signalling interactivity to users.
+* Score saving system allowing users to compare scores before and after games.
+* Social media links at the bottom of the page linking to author.
 
 #### Potential Future features
 
-
+* Choice of topics
+* Audio and audio feedback to user input
 
 ---
 
@@ -105,6 +112,7 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 * [Google Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools)
 * [CSS Gradient](https://cssgradient.io/)
 * [Particles](https://marcbruederlin.github.io/particles.js/)
+* [Balsamiq](https://balsamiq.com/)
 
 ---
 
