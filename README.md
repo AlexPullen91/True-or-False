@@ -110,9 +110,11 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 ## Tools
 
 * [Google Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools)
+* [Open Trivia Database API](https://opentdb.com/)
 * [CSS Gradient](https://cssgradient.io/)
 * [Particles](https://marcbruederlin.github.io/particles.js/)
 * [Balsamiq](https://balsamiq.com/)
+* [Coolers](https://coolors.co/)
 
 ---
 
