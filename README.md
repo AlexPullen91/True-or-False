@@ -30,10 +30,20 @@ Provide a simple but engaging user experience for someone interested in playing 
 
 #### User goals
 
+* Something quick, simple and engaging
+* Easily navigated user interface
+* Fun and challenging
+* Interesting variety of questions
 
 #### User stories
 
-
+* "As a trivia game fan I expect to be appropriately challenged by the questions"
+* "As a user I expect to be able to navigate straight into a game from the landing page"
+* "As a competitive player I expect to be able to log my scores and compare them with those of others"
+* "As a user I expect real time feedback to my input when I interact with the site"
+* "As a user I expect to be able to play multiple times with a refreshed set of questions each time"
+* "As a user I expect to have the option to leave a game in the middle"
+* "As a user I expect to have the option to play again immediately when I finish"
 
 ---
 
