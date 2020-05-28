@@ -1,39 +1,127 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+# True or False 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+True or False is a simple quiz app presenting the user with a question. Is it true or false?
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+---
 
-A blue button should appear to click: *Make Public*,
+# Contents
+1. [UX / Project Goals](#ux)
+2. [User Goals](#user-Goals)
+3. [User Stories](#user-stories)
+4. [Design Choices](#design-choices)
+5. [Wireframes](#wireframes)
+6. [Features & Potential Future features](#features)
+7. [Technologies used](#languages)
+8. [Testing](#testing)
+9. [Issues and resolutions](#issues-and-resolutions)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
+---
 
-Another blue button should appear to click: *Open Browser*.
+## UX
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+### Project Goals
 
-Another blue button should appear to click: *Open Browser*.
+Provide a simple but engaging user experience for someone interested in playing a trivia game.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+#### User goals
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+#### User stories
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+---
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Design Choices
 
---------
 
-Happy coding!
+
+---
+
+### Wireframes
+
+
+I used [Balsamiq](https://balsamiq.com/) to create wireframes for **mobile, tablet and desktop.**
+
+You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/tree/master/wireframes).
+
+---
+
+### Features
+
+
+
+#### Potential Future features
+
+
+
+---
+
+## Languages
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [Javascript](https://www.javascript.com/) 
+
+---
+
+## Libraries
+
+* [Bootstrap](https://getbootstrap.com/) 
+* [Google Fonts](https://fonts.google.com/)
+
+---
+
+## Technologies 
+
+* [Github](https://github.com/) to host this project's respositories.
+* [Gitpod](https://www.gitpod.io/) IDE of choice for development.
+* [Git](https://git-scm.com/) for version control
+
+---
+
+## Tools
+
+* [Google Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools)
+
+
+---
+
+## Testing
+
+
+
+### Issues and Resolutions
+
+
+
+### Known Issues
+
+
+---
+
+## Deployment
+
+
+---
+
+## Credits
+
+### Content
+
+
+### Media
+
+
+
+### Code
+
+
+
+### Acknowledgements
+
