@@ -30,10 +30,11 @@ Provide a simple but engaging user experience for someone interested in playing 
 
 #### User goals
 
-* Something quick, simple and engaging
-* Easily navigated user interface
-* Fun and challenging
-* Interesting variety of questions
+* Something quick, simple and engaging.
+* Easily navigated user interface.
+* Fun and challenging.
+* Interesting variety of questions.
+* Ability to save and check high scores.
 
 #### User stories
 
@@ -48,11 +49,12 @@ Provide a simple but engaging user experience for someone interested in playing 
 ---
 
 ## Design Choices
-* User interface situated centrally in the screen leaving lots of space around the edges
-* [Particle](https://marcbruederlin.github.io/particles.js/) effect in the background to create interesting visual for the user reminiscent of DNA structures and sci-fi interfaces. Speeds up and exands pending right or wrong answers
+* User interface situated centrally in the screen leaving lots of space outside of it to be used by background effect.
+* [Particle](https://marcbruederlin.github.io/particles.js/) effect in the background to create interesting visual for the user reminiscent of DNA structures and sci-fi style interfaces.
+* Particle effect responds to user input to increase feeling of interactivity. Speed and size swell with correct or incorrect answers.
 * Indigo dye #1a4e6e and Honolulu blue #2c6e96 combine to make a [gradient background](https://cssgradient.io/)
-* White #FFFFFF for the particle effect and font color
-* [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?sort=popularity&preview.text=Question+number+1+2+3+4+5+6&preview.text_type=custom&sidebar.open&selection.family=Roboto+Mono:wght@300) for font family
+* White #FFFFFF for the particle effect and font color.
+* [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?sort=popularity&preview.text=Question+number+1+2+3+4+5+6&preview.text_type=custom&sidebar.open&selection.family=Roboto+Mono:wght@300) for font family.
 
 ---
 
@@ -67,7 +69,7 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ### Features
 
-
+* 
 
 #### Potential Future features
 
