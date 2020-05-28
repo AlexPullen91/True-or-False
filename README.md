@@ -38,8 +38,11 @@ Provide a simple but engaging user experience for someone interested in playing 
 ---
 
 ## Design Choices
-
-
+* User interface situated centrally in the screen leaving lots of space around the edges
+* [Partcile](https://marcbruederlin.github.io/particles.js/) effect in the background to create interesting visual for the user reminiscent of DNA structures and sci-fi interfaces. Speeds up and exands pending right or wrong answers
+* Indigo dye #1a4e6e and Honolulu blue #2c6e96 combine to make a [gradient background] (https://cssgradient.io/)
+* White #FFFFFF for the particle effect and font color
+* [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?sort=popularity&preview.text=Question+number+1+2+3+4+5+6&preview.text_type=custom&sidebar.open&selection.family=Roboto+Mono:wght@300) fot font family
 
 ---
 
