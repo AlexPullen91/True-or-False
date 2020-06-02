@@ -1,0 +1,5 @@
+:root {
+    background: rgb(26,78,110);
+    background: linear-gradient(90deg, rgba(26,78,110,1) 10%, rgba(44,110,150,1) 50%, rgba(26,78,110,1) 90%);;
+    font-size: 62.5%;
+}
