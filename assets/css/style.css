@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 :root {
     background: rgb(26,78,110);
     background: linear-gradient(90deg, rgba(26,78,110,1) 10%, rgba(44,110,150,1) 50%, rgba(26,78,110,1) 90%);;
@@ -7,4 +9,5 @@
 * {
     font-family: 'Roboto Mono', monospace;
     color: #FFFFFF;
+
 }
