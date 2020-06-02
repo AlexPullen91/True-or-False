@@ -9,5 +9,8 @@
 * {
     font-family: 'Roboto Mono', monospace;
     color: #FFFFFF;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
