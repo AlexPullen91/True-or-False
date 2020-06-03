@@ -23,3 +23,13 @@
     max-width: 100rem;
     margin: 0 auto;
 }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
