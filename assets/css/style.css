@@ -18,8 +18,6 @@
     font-size: 4rem;
     margin: 1rem;
     padding: 1rem;
-    background-color: rgba(26,78,110,1);
-    border: solid 0.1rem #FFFFFF;
 }
 
 .background {
@@ -39,6 +37,12 @@
     align-items: center;
     max-width: 100rem;
     margin: 0 auto;
+}
+
+.box-style {
+    border: solid 0.1rem #FFFFFF;
+    background-color: rgba(26,78,110,1);
+    padding: 1rem;
 }
 
 .flex-column {
