@@ -43,7 +43,7 @@
 .box-style {
     border: solid 0.1rem #FFFFFF;
     background-color: rgba(26,78,110,1);
-    padding: 1rem;
+    padding: 1rem 0 2rem 0;
     filter: opacity(90%);
 }
 
@@ -60,7 +60,13 @@
 .btn {
     border: solid 0.1rem #FFFFFF;
     margin: 0.8rem;
-    padding: 0.2rem ;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem; ;
     background-color: rgba(26,78,110,1);
     font-size: 2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: translateY(-0.4rem);
+    transition: transform 150ms;
 }
