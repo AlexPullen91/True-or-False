@@ -14,6 +14,14 @@
     padding: 0;
 }
 
+.heading-style {
+    font-size: 4rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(26,78,110,1);
+    border: solid 0.1rem #FFFFFF;
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -41,4 +49,12 @@
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    border: solid 0.1rem #FFFFFF;
+    margin: 0.8rem;
+    padding: 0.2rem ;
+    background-color: rgba(26,78,110,1);
+    font-size: 2rem;
 }
