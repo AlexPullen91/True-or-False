@@ -71,3 +71,8 @@
     transform: translateY(-0.4rem);
     transition: transform 150ms;
 }
+
+.question-style {
+    font-size: 3rem;
+    margin: 2rem;
+}
