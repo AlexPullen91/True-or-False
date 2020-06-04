@@ -63,6 +63,7 @@
     padding: 0.2rem 0.6rem 0.2rem 0.6rem; ;
     background-color: rgba(26,78,110,1);
     font-size: 2rem;
+    text-decoration: none;
 }
 
 .btn:hover {
