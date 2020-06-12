@@ -4,7 +4,7 @@ const falseButton = document.getElementById("falseButton");
 
 
 let currentStatement = {};
-
+let statementCounter = 0;
 let availableStatements = [];
 
 let statements = [
@@ -35,11 +35,9 @@ let statements = [
   },
 ];
 
-
 startGame = () => {
-
+    statementCounter = 0;
     availableStatements = [...statements];
-    // console.log(availableStatements);
     getNextStatement();
 };
 
@@ -48,9 +46,8 @@ getNextStatement = () => {
   currentStatement = availableStatements[statementIndex];
   statement.innerText = currentStatement.question;
 
-  correctAnswer = availableStatements[0].correct_answer;
-  
-  trueButtom = correctAnswer;
+  correctAnswer = currentStatement.correct_answer;
+  wrongAnswer = currentStatement.incorrect_answers[0];
 };
 
 startGame();
