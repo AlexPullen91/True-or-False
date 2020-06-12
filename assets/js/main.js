@@ -40,7 +40,12 @@ startGame = () => {
   getNextStatement();
 };
 
+const maxStatements = 3;
+
 getNextStatement = () => {
+  if (availableStatements.length === 0 || statementCounter > maxStatements) {
+    return window.location.assign("/gameOver.html");
+  }
   debugger;
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
@@ -63,13 +68,11 @@ getNextStatement = () => {
 
 trueButton.addEventListener("click", (e) => {
   const selectedChoice = e.target.innerText;
-  console.log(selectedChoice === correctAnswer);
   getNextStatement();
 });
 
 falseButton.addEventListener("click", (e) => {
   const selectedChoice = e.target.innerText;
-  console.log(selectedChoice === correctAnswer);
   getNextStatement();
 });
 
