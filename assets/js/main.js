@@ -68,11 +68,21 @@ getNextStatement = () => {
 
 trueButton.addEventListener("click", (e) => {
   const selectedChoice = e.target.innerText;
+  let applyClass = 'wrong-answer';
+  if(selectedChoice === correctAnswer) {
+      applyClass = 'correct-answer';
+    }
+    console.log(applyClass);
   getNextStatement();
 });
 
 falseButton.addEventListener("click", (e) => {
   const selectedChoice = e.target.innerText;
+  let applyClass = 'wrong-answer';
+  if(selectedChoice === correctAnswer) {
+      applyClass = 'correct-answer';
+    }
+    console.log(applyClass);
   getNextStatement();
 });
 
