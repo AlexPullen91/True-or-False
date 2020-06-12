@@ -2,7 +2,6 @@ const statement = document.getElementById("statement");
 const trueButton = document.getElementById("trueButton");
 const falseButton = document.getElementById("falseButton");
 
-
 let currentStatement = {};
 let statementCounter = 0;
 let availableStatements = [];
@@ -36,9 +35,9 @@ let statements = [
 ];
 
 startGame = () => {
-    statementCounter = 0;
-    availableStatements = [...statements];
-    getNextStatement();
+  statementCounter = 0;
+  availableStatements = [...statements];
+  getNextStatement();
 };
 
 getNextStatement = () => {
@@ -48,6 +47,14 @@ getNextStatement = () => {
 
   correctAnswer = currentStatement.correct_answer;
   wrongAnswer = currentStatement.incorrect_answers[0];
+
+  if (correctAnswer === "True") {
+    trueButton.innerText = correctAnswer;
+    falseButton.innerText = wrongAnswer;
+  } else if (correctAnswer === "False") {
+    falseButton.innerText = correctAnswer;
+    trueButton.innerText = wrongAnswer;
+  }
 };
 
 startGame();
