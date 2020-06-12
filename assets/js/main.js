@@ -3,38 +3,52 @@ const trueButton = document.getElementById("trueButton");
 const falseButton = document.getElementById("falseButton");
 const score = document.getElementById('score');
 
+
 let currentStatement = {};
 let statementCounter = 0;
 let availableStatements = [];
 let scoreAmount = 0;
 
-let statements = [
-  {
-    category: "Animals",
-    type: "boolean",
-    difficulty: "medium",
-    question: "An octopus can fit through any hole larger than its beak.",
-    correct_answer: "True",
-    incorrect_answers: ["False"],
-  },
-  {
-    category: "General Knowledge",
-    type: "boolean",
-    difficulty: "easy",
-    question: "French is an official language in Canada.",
-    correct_answer: "True",
-    incorrect_answers: ["False"],
-  },
-  {
-    category: "Entertainment: Musicals & Theatres",
-    type: "boolean",
-    difficulty: "easy",
-    question:
-      "In the play Oedipus Rex, Oedipus kills his father due to jealousy in loving his mother.",
-    correct_answer: "False",
-    incorrect_answers: ["True"],
-  },
-];
+let statements = [];
+
+fetch("statements.json")
+    .then(res => {
+        debugger;
+        return res.json();
+    })
+    .then( loadedStatements => {
+        console.log(loadedStatements);
+        statements = loadedStatements;
+        startGame();
+    });
+
+// let statements = [
+//   {
+//     category: "Animals",
+//     type: "boolean",
+//     difficulty: "medium",
+//     question: "An octopus can fit through any hole larger than its beak.",
+//     correct_answer: "True",
+//     incorrect_answers: ["False"],
+//   },
+//   {
+//     category: "General Knowledge",
+//     type: "boolean",
+//     difficulty: "easy",
+//     question: "French is an official language in Canada.",
+//     correct_answer: "True",
+//     incorrect_answers: ["False"],
+//   },
+//   {
+//     category: "Entertainment: Musicals & Theatres",
+//     type: "boolean",
+//     difficulty: "easy",
+//     question:
+//       "In the play Oedipus Rex, Oedipus kills his father due to jealousy in loving his mother.",
+//     correct_answer: "False",
+//     incorrect_answers: ["True"],
+//   },
+// ];
 
 startGame = () => {
   statementCounter = 0;
@@ -51,7 +65,6 @@ getNextStatement = () => {
       localStorage.setItem('mostRecentScore', scoreAmount);
     return window.location.assign("/gameOver.html");
   }
-  debugger;
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
   currentStatement = availableStatements[statementIndex];
@@ -101,5 +114,3 @@ incrementScore = num => {
     scoreAmount += num;
     score.innerHTML = `Score: ${scoreAmount}`;
 }
-
-startGame();
