@@ -11,16 +11,36 @@ let scoreAmount = 0;
 
 let statements = [];
 
+// fetch("https://opentdb.com/api.php?amount=20&type=boolean")
+//     .then(res => {
+//         return res.json();
+//     })
+//     .then( loadedStatements => {
+//         statements = loadedStatements.results.map( loadedStatement => {
+//             const formattedStatement = {
+//                 statement: loadedStatement.statement
+//             };
+
+//         })
+        // statements = loadedStatements;
+        // startGame();
+    // })
+    // .catch(err => {
+    //     console.log(err);
+    // })
+
 fetch("statements.json")
     .then(res => {
-        debugger;
         return res.json();
     })
     .then( loadedStatements => {
         console.log(loadedStatements);
         statements = loadedStatements;
         startGame();
-    });
+    })
+.catch(err => {
+        console.log(err);
+    })
 
 // let statements = [
 //   {
@@ -57,7 +77,7 @@ startGame = () => {
   getNextStatement();
 };
 
-const maxStatements = 3;
+const maxStatements = 20;
 const correctAnswerPoints = 1;
 
 getNextStatement = () => {
