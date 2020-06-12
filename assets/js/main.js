@@ -50,39 +50,43 @@ getNextStatement = () => {
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
   currentStatement = availableStatements[statementIndex];
-  statement.innerText = currentStatement.question;
+  statement.innerHTML = currentStatement.question;
 
   correctAnswer = currentStatement.correct_answer;
   wrongAnswer = currentStatement.incorrect_answers[0];
 
   if (correctAnswer === "True") {
-    trueButton.innerText = correctAnswer;
-    falseButton.innerText = wrongAnswer;
+    trueButton.innerHTML = correctAnswer;
+    falseButton.innerHTML = wrongAnswer;
   } else if (correctAnswer === "False") {
-    falseButton.innerText = correctAnswer;
-    trueButton.innerText = wrongAnswer;
+    falseButton.innerHTML = correctAnswer;
+    trueButton.innerHTML = wrongAnswer;
   }
 
   availableStatements.splice(statementIndex, 1);
 };
 
 trueButton.addEventListener("click", (e) => {
-  const selectedChoice = e.target.innerText;
-  let applyClass = 'wrong-answer';
+  let selectedChoice = e.target.innerHTML;
+
   if(selectedChoice === correctAnswer) {
-      applyClass = 'correct-answer';
+      alert("Correct Answer!");
+    } else {
+        alert("Wrong Answer!");
     }
-    console.log(applyClass);
+
   getNextStatement();
 });
 
 falseButton.addEventListener("click", (e) => {
-  const selectedChoice = e.target.innerText;
-  let applyClass = 'wrong-answer';
+  let selectedChoice = e.target.innerHTML;
+  
   if(selectedChoice === correctAnswer) {
-      applyClass = 'correct-answer';
+      alert("Correct Answer!");
+    } else {
+        alert("Wrong Answer!");
     }
-    console.log(applyClass);
+
   getNextStatement();
 });
 
