@@ -48,6 +48,7 @@ const correctAnswerPoints = 1;
 
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
+      localStorage.setItem('mostRecentScore', scoreAmount);
     return window.location.assign("/gameOver.html");
   }
   debugger;
