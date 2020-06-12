@@ -41,6 +41,7 @@ startGame = () => {
 };
 
 getNextStatement = () => {
+    debugger;
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
   currentStatement = availableStatements[statementIndex];
@@ -57,5 +58,19 @@ getNextStatement = () => {
     trueButton.innerText = wrongAnswer;
   }
 };
+
+trueButton.addEventListener('click', e => {
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.trueButton;
+    console.log(selectedAnswer === correctAnswer);
+    getNextStatement();
+});
+
+falseButton.addEventListener('click', e => {
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.falseButton;
+    console.log(selectedAnswer === correctAnswer);
+    getNextStatement();
+});
 
 startGame();
