@@ -41,6 +41,7 @@ startGame = () => {
 };
 
 getNextStatement = () => {
+  statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
   currentStatement = availableStatements[statementIndex];
   statement.innerText = currentStatement.question;
