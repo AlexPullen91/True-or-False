@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Game Over</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game Over</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="assets/js/particles.js"></script>
-</head>
+  </head>
 
-<body>
-	<div class="container">
-		<div class="flex-center flex-column box-style">
-			<h1 class="heading-style">Score: 0</h1>
-            <a class="btn" href="">Username</a>
-            <a class="btn" href="">Save</a>
-            <a class="btn" href="">High Scores</a>
-            <a class="btn" href="">Play Again</a>
-		</div>
-	</div>
+  <body>
+    <div class="container">
+      <div class="flex-center flex-column box-style">
+        <h1 class="heading-style">Score: 0</h1>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+          >
+            Save
+          </button>
+        </form>
+        <a class="btn" href="">High Scores</a>
+        <a class="btn" href="">Play Again</a>
+      </div>
+    </div>
 
-	<canvas class="background"></canvas>
-</body>
-
+    <canvas class="background"></canvas>
+  </body>
 </html>
