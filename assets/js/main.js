@@ -1,10 +1,12 @@
 const statement = document.getElementById("statement");
 const trueButton = document.getElementById("trueButton");
 const falseButton = document.getElementById("falseButton");
+const score = document.getElementById('score');
 
 let currentStatement = {};
 let statementCounter = 0;
 let availableStatements = [];
+let scoreAmount = 0;
 
 let statements = [
   {
@@ -36,11 +38,13 @@ let statements = [
 
 startGame = () => {
   statementCounter = 0;
+  scoreAmount = 0;
   availableStatements = [...statements];
   getNextStatement();
 };
 
 const maxStatements = 3;
+const correctAnswerPoints = 1;
 
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
@@ -71,6 +75,7 @@ trueButton.addEventListener("click", (e) => {
 
   if(selectedChoice === correctAnswer) {
       alert("Correct Answer!");
+      incrementScore(correctAnswerPoints);
     } else {
         alert("Wrong Answer!");
     }
@@ -83,11 +88,17 @@ falseButton.addEventListener("click", (e) => {
   
   if(selectedChoice === correctAnswer) {
       alert("Correct Answer!");
+      incrementScore(correctAnswerPoints);
     } else {
         alert("Wrong Answer!");
     }
 
   getNextStatement();
 });
+
+incrementScore = num => {
+    scoreAmount += num;
+    score.innerHTML = `Score: ${scoreAmount}`;
+}
 
 startGame();
