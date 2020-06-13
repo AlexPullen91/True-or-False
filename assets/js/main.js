@@ -22,20 +22,20 @@ let statements = [];
 //             };
 
 //         })
-        // statements = loadedStatements;
-        // startGame();
-    // })
-    // .catch(err => {
-    //     console.log(err);
-    // })
+//         statements = loadedStatements;
+//         startGame();
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     })
 
-fetch("statements.json")
+fetch("https://opentdb.com/api.php?amount=20&type=boolean")
     .then(res => {
         return res.json();
     })
     .then( loadedStatements => {
-        console.log(loadedStatements);
-        statements = loadedStatements;
+        console.log(loadedStatements.results);
+        statements = loadedStatements.results;
         startGame();
     })
 .catch(err => {
