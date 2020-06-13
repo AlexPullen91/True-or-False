@@ -16,7 +16,6 @@ fetch("https://opentdb.com/api.php?amount=20&type=boolean")
         return res.json();
     })
     .then( loadedStatements => {
-        console.log(loadedStatements.results);
         statements = loadedStatements.results;
         startGame();
     })
