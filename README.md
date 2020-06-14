@@ -94,7 +94,6 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ## Libraries
 
-* [Bootstrap](https://getbootstrap.com/) 
 * [Google Fonts](https://fonts.google.com/)
 
 ---
