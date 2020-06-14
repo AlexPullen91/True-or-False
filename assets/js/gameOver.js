@@ -10,11 +10,12 @@ saveHighScore = (e) => {
         score: mostRecentScore,
         name: username.value
     };
-    highScores.push(score);
 
+    highScores.push(score);
     highScores.sort((a, b) => b.score - a.score);
-    
     highScores.splice(10);
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
     console.log(highScores);
 
 }
