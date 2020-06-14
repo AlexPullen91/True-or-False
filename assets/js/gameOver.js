@@ -1,9 +1,8 @@
 const mostRecentScore = localStorage.getItem("mostRecentScore");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const playerName = document.getElementById("playerName");
 const youScored = document.getElementById("youScored");
 youScored.innerText = `You scored: ${mostRecentScore}`;
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
-console.log('highScores');
 
 saveHighScore = (e) => {
     e.preventDefault();
