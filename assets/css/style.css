@@ -72,6 +72,11 @@
     transition: transform 150ms;
 }
 
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    transform: none;
+}
+
 .question-style {
     font-size: 3rem;
     margin: 2rem;
