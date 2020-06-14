@@ -2,13 +2,18 @@ const mostRecentScore = localStorage.getItem("mostRecentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const playerName = document.getElementById("playerName");
 const youScored = document.getElementById("youScored");
+const saveScoreBtn = document.getElementById("saveScoreBtn");
 youScored.innerText = `You scored: ${mostRecentScore}`;
+
+playerName.addEventListener("keyup", () => {
+    saveScoreBtn.disabled = !playerName.value;
+});
 
 saveHighScore = (e) => {
     e.preventDefault();
     const score = {
         score: mostRecentScore,
-        name: username.value
+        name: playerName.value
     };
 
     highScores.push(score);
