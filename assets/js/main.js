@@ -2,7 +2,8 @@ const statement = document.getElementById("statement");
 const trueButton = document.getElementById("trueButton");
 const falseButton = document.getElementById("falseButton");
 const score = document.getElementById('score');
-
+const loadingText = document.getElementById("loadingText");
+const mainHub = document.getElementById("mainHub");
 
 let currentStatement = {};
 let statementCounter = 0;
@@ -29,6 +30,8 @@ startGame = () => {
   scoreAmount = 0;
   availableStatements = [...statements];
   getNextStatement();
+  mainHub.classList.remove("hidden");
+  loadingText.classList.add("hidden");
 };
 
 const maxStatements = 20;
