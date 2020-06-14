@@ -89,3 +89,8 @@ input {
     color: #000000;
     /* box-shadow: 0 0.1rem 1rem 0 #FFFFFF; */
 }
+
+.high-scores-list {
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+}
