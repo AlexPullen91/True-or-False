@@ -5,7 +5,7 @@ window.onload = function () {
     connectParticles: true,
     speed: 0.2,
     sizeVariations: 2,
-    minDistance: 100
+    minDistance: 100,
   });
 };
 
@@ -62,9 +62,9 @@ const startGame = (results) => {
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
     localStorage.setItem("playersScore", scoreAmount);
-    // return window.location.assign("/True-or-False/gameover.html");
-    return window.location.assign("/gameover.html");
+    return window.location.assign("/True-or-False/gameover.html");
   }
+
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
   currentStatement = availableStatements[statementIndex];
@@ -92,29 +92,24 @@ getNextStatement = () => {
 trueButton.addEventListener("click", (event) => {
   let playersChoice = event.target.innerHTML;
 
-  if (playersChoice === correctAnswer) {
-    Swal.fire({
+  if (playersChoice === correctAnswer) {    Swal.fire({
       title: "Correct!",
       confirmButtonText: "Next",
       confirmButtonColor: "#00af14",
     });
-    increaseScore(correctAnswerPoint);
-    particlesCorrect();
+    inc    particlesCorrect();
   } else {
     Swal.fire({
-      title: "Wrong!",
-      confirmButtonText: "Next",
+      titl      confirmButtonText: "Next",
       confirmButtonColor: "#e20000",
     });
     particlesWrong();
   }
-
-  getNextStatement();
-});
+  getNe});
 
 /**
  * adds click event to false button that checks for correct answer
- * awards a point if true, triggers modal and particles effect
+ awards a point if true, triggers modal and particles effect
  * calls next statement
  */
 falseButton.addEventListener("click", (event) => {
@@ -136,21 +131,21 @@ falseButton.addEventListener("click", (event) => {
     });
     particlesWrong();
   }
-
   getNextStatement();
 });
 
 /**
- * swells and speeds up the particle effect over 3 seconds
+ * 
+  swells and speeds up the particle effect over 3 seconds
  */
 const particlesCorrect = () => {
   Particles.init({
     speed: 0.7,
     sizeVariations: 5,
-    minDistance: 150
+    minDistance: 150,
   });
   setTimeout(() => {
-      particlesReset();
+    particlesReset();
   }, 3000);
 };
 
@@ -160,10 +155,10 @@ const particlesCorrect = () => {
 const particlesWrong = () => {
   Particles.init({
     speed: 0.1,
-    minDistance: 50
+    minDistance: 50,
   });
   setTimeout(() => {
-      particlesReset();
+    particlesReset();
   }, 3000);
 };
 
@@ -174,7 +169,7 @@ const particlesReset = () => {
   Particles.init({
     speed: 0.2,
     sizeVariations: 2,
-    minDistance: 100
+    minDistance: 100,
   });
 };
 

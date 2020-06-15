@@ -6,7 +6,7 @@ const saveScoreButton = document.querySelector("#saveScoreButton");
 youScored.innerText = `You scored: ${playersScore}`;
 
 /**
- * adds event listener that disables save button unless 
+ * adds event listener that disables save button unless
  * input field is typed in
  */
 playerName.addEventListener("keyup", () => {
