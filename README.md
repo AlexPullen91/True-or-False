@@ -119,11 +119,11 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ## Testing
 
-
+Testing for responsiveness throughout development was carried out with google chrome developer tools and the device toolbar to ensure compatibility on all screen sizes.
 
 ### Issues and Resolutions
 
-
+* During development I encountered a problem when writing the conditional statement to determine if the correct answer was being selected. False was reliably returned on every instance which turned out to be due to the wrong use of operator.  Because I was comparing string values I changed == to the strict equality operator === and this solved the problem.
 
 ### Known Issues
 
