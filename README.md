@@ -62,23 +62,28 @@ Provide a simple but engaging user experience for someone interested in playing 
 
 I used [Balsamiq](https://balsamiq.com/) to create wireframes for **mobile, tablet and desktop.**
 
+I opted to leave out social links from the final product in favour of a less cluttered UI.
+
 You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/tree/master/wireframes).
 
 ---
 
 ### Features
 
-* Main menu with play again button and high scores button.
+* Main menu with play button and high scores button that navigates to their respective pages.
 * Game section featuring [API generated questions](https://opentdb.com/) presenting user with clickable option between true or false.
+* Particle effect *responds to user input* to increase feeling of interactivity.
+* The effect briefly swells and speeds up when the correct answer is given. It slows down and disperses slightly when the wrong answer is given.
+* Modal pop ups also inform the user if they got it right or wrong.
 * Mousing over buttons to give hover effect signalling interactivity to users.
-* Score saving system allowing users to compare scores before and after games.
-* Social media links at the bottom of the page linking to author.
+* Scores can be saved to local storage with their user name which then feature on seperate high scores page.
 
 #### Potential Future features
 
-* Particle effect to respond to user input to increase feeling of interactivity.
-* Choice of topics
-* Audio and audio feedback to user input
+* Choice of specific topics.
+* Countdown timer to give sense of urgency.
+* Audio and audio feedback to user input.
+* More permanent way to save and compare scores globally.
 
 ---
 ## Technologies Used
