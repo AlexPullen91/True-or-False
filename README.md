@@ -55,6 +55,7 @@ Provide a simple but engaging user experience for someone interested in playing 
 * Less is more approach to avoid cluttering the UI with unnecessary features and icons.
 * Indigo dye #1a4e6e and Honolulu blue #2c6e96 combine to make a [gradient background](https://cssgradient.io/)
 * White #FFFFFF for the particle effect and font color.
+* Green #00af14 and Red #e20000 for the right and wrong answer modal button.
 * [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?sort=popularity&preview.text=Question+number+1+2+3+4+5+6&preview.text_type=custom&sidebar.open&selection.family=Roboto+Mono:wght@300) for font family.
 
 ---
