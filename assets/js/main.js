@@ -92,11 +92,13 @@ getNextStatement = () => {
 trueButton.addEventListener("click", (event) => {
   let playersChoice = event.target.innerHTML;
 
-  if (playersChoice === correctAnswer) {    Swal.fire({
+  if (playersChoice === correctAnswer) {
+    Swal.fire({
       title: "Correct!",
       confirmButtonText: "Next",
       confirmButtonColor: "#00af14",
     });
+    increaseScore(correctAnswerPoint);
     particlesCorrect();
   } else {
     Swal.fire({
@@ -106,7 +108,8 @@ trueButton.addEventListener("click", (event) => {
     });
     particlesWrong();
   }
-  getNe});
+  getNextStatement();
+});
 
 /**
  * adds click event to false button that checks for correct answer
