@@ -140,6 +140,22 @@ Testing for responsiveness throughout development was carried out with google ch
 
 ### Known Issues
 
+* The particle effect is very taxing on the site's performance and due to time constraints I've unfortunately had to scale back initial ambitions to enchance the interactivity around this effect. See below an example of one of the triggered functions in the button event listeners that would swell and speed up the effect on correct answers. 
+
+```
+const particlesCorrect = () => {
+  Particles.init({
+    speed: 0.7,
+    sizeVariations: 5,
+    minDistance: 150,
+  });
+  setTimeout(() => {
+    particlesReset();
+  }, 3000);
+};
+```
+
+there was a similar function ```particlesWrong()``` to slow down and disperse the particles on wrong answers and ```particlesReset()``` that returned the effect to it's default state. After only a couple questions performance tanked and particularly so for mobile devices therefore I opted to leave the particles running in the background as is. As I had planned for it to feature more prominently this is something that I'd like to revisit in the future.
 
 ---
 
@@ -184,4 +200,6 @@ __In order to run True or False locally be sure to follow these steps whilst sti
 * [sweetalert2](https://sweetalert2.github.io/) for modals.
 
 ### Acknowledgements
+
+* My mentor [Simen Daehlin](https://github.com/Eventyret) who was very generous with his time and support on this project.
 
