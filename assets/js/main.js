@@ -104,5 +104,5 @@ falseButton.addEventListener("click", (e) => {
 
 incrementScore = (num) => {
   scoreAmount += num;
-  score.innerHTML = `Score: ${scoreAmount}`;
+  score.innerHTML = `Score: ${scoreAmount} out of 20`;
 };
