@@ -119,7 +119,15 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ## Testing
 
-Testing for responsiveness throughout development was carried out with google chrome developer tools and the device toolbar to ensure compatibility on all screen sizes.
+Testing for responsiveness and bugs throughout development was carried out with google chrome developer tools, and the device toolbar to ensure compatibility on all screen sizes.
+
+* True or False has been tested on an iPhone X, Macbook Pro and Windows 10 iOTA, working as intended on the following browsers:
+    * Google Chrome
+    * Microsoft edge
+    * Safari
+    * Mozilla Firefox
+
+    
 
 * All HTML ran through [W3C validator](https://validator.w3.org/) without any issues.
 * CSS ran through [W3C validation service](https://jigsaw.w3.org/css-validator/validator.html.en) without any issues.
@@ -132,6 +140,12 @@ Testing for responsiveness throughout development was carried out with google ch
     2. Clicked to enter and typed in "name".
     3. Moused over save to see cursor has changed to pointer instead of no entry sign and then clicked.
     4. Moused over to high scores button and clicked. Page changes to highscores.html and "name" is correctly displayed.
+
+**High Scores sort and cap at 10**
+    
+    1. Played through the game 10 games logging with a unique name and different score each time.
+    2. On 11th playthrough ensured score was high enough to place and submitted with unique name.
+    3. Lowest score drops out in in place of the latest and confirms functionality.
 
 
 ### Issues and Resolutions
@@ -155,7 +169,9 @@ const particlesCorrect = () => {
 };
 ```
 
-there was a similar function ```particlesWrong()``` to slow down and disperse the particles on wrong answers and ```particlesReset()``` that returned the effect to it's default state. After only a couple questions performance tanked and particularly so for mobile devices therefore I opted to leave the particles running in the background as is. As I had planned for it to feature more prominently this is something that I'd like to revisit in the future.
+there was a similar function ```particlesWrong()``` to slow down and disperse the particles on wrong answers and ```particlesReset()``` that returned the effect to it's default state. 
+
+After only a couple questions performance tanked and particularly so for mobile devices therefore I opted to leave the particles running in the background as is. As I had planned for it to feature more prominently this is something that I'd like to revisit in the future.
 
 ---
 
