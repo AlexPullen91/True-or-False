@@ -102,6 +102,15 @@ input {
     padding: 1rem 0 2rem 0;
 }
 
+.high-score-list-items {
+    padding: 0.2rem 0 0.2rem 0;
+    
+}
+
+.high-score-list-items:hover {
+    transform: scale(1.05);
+}
+
 /* Hides the game whilst loading */
 .hidden {
     display: none;
