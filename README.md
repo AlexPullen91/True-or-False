@@ -4,9 +4,6 @@
 
 True or False is a simple quiz app presenting the user with a question. Is it true or false?
 
-Click [here](https://alexpullen91.github.io/True-or-False/) to play
-
-
 ---
 
 # Contents
@@ -84,8 +81,9 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 * Audio and audio feedback to user input
 
 ---
+## Technologies Used
 
-## Languages
+### Languages
 
 * [HTML](https://en.wikipedia.org/wiki/HTML)
 * [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
@@ -93,27 +91,22 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ---
 
-## Libraries
+### Libraries
 
 * [Google Fonts](https://fonts.google.com/)
 * [sweetalert2](https://sweetalert2.github.io/)
+* [Particles](https://marcbruederlin.github.io/particles.js/)
 
 ---
 
-## Technologies 
+### Tools
 
-* [Github](https://github.com/) to host this project's respositories.
-* [Gitpod](https://www.gitpod.io/) IDE of choice for development.
-* [Git](https://git-scm.com/) for version control
-
----
-
-## Tools
-
+* [Github](https://github.com/)
+* [Gitpod](https://www.gitpod.io/)
+* [Git](https://git-scm.com/)
 * [Google Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools)
 * [Open Trivia Database API](https://opentdb.com/)
 * [CSS Gradient](https://cssgradient.io/)
-* [Particles](https://marcbruederlin.github.io/particles.js/)
 * [Balsamiq](https://balsamiq.com/)
 * [Coolers](https://coolors.co/)
 
@@ -148,7 +141,7 @@ True or False was developed on GitPod, using git and GitHub to host the reposito
 
 __When deploying True or False using GitHub Pages be sure to follow these steps:__
 
-1. Navigate to '/AlexPullen91/True-or-False' or alternatively click [here](https://github.com/AlexPullen91/True-or-False).
+1. Navigate to **'/AlexPullen91/True-or-False'** or alternatively click [here](https://github.com/AlexPullen91/True-or-False).
 2. In the top navigation click on 'settings'.
 3. Scroll down to the GitHub Pages area.
 4. Select 'Master Branch' from the 'Source' dropdown menu.
@@ -157,7 +150,7 @@ __When deploying True or False using GitHub Pages be sure to follow these steps:
 
 __In order to run True or False locally be sure to follow these steps whilst still on Github:__
 
-1. Navigate to '/AlexPullen91/True-or-False' or alternatively click [here](https://github.com/AlexPullen91/True-or-False)..
+1. Navigate to **'/AlexPullen91/True-or-False'** or alternatively click [here](https://github.com/AlexPullen91/True-or-False)..
 2. Click the green 'Clone or Download' button.
 3. Copy the url in the dropdown box.
 4. Using your IDE of choice open up your preferred terminal.
@@ -179,7 +172,7 @@ __In order to run True or False locally be sure to follow these steps whilst sti
 
 ### Code
 
-* [James Q Quick's brilliant video series](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) was instrumental in learning how to write the JavaScript for this site.
+* [James Q Quick's brilliant youtube channel](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) was instrumental in learning how to write the JavaScript for this site.
 * [sweetalert2](https://sweetalert2.github.io/) for modals.
 
 ### Acknowledgements
