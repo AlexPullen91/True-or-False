@@ -69,42 +69,42 @@ getNextStatement = () => {
   availableStatements.splice(statementIndex, 1);
 };
 
-trueButton.addEventListener("click", (e) => {
-  let selectedChoice = e.target.innerHTML;
+trueButton.addEventListener("click", (event) => {
+  let selectedChoice = event.target.innerHTML;
 
   if (selectedChoice === correctAnswer) {
     Swal.fire({
-        title: 'Correct!',
-        confirmButtonText: 'Next',
-        confirmButtonColor: '#00af14'
+        title: "Correct!",
+        confirmButtonText: "Next",
+        confirmButtonColor: "#00af14"
     });
     incrementScore(correctAnswerPoints);
   } else {
     Swal.fire({
-        title: 'Wrong!',
-        confirmButtonText: 'Next',
-        confirmButtonColor: '#e20000'
+        title: "Wrong!",
+        confirmButtonText: "Next",
+        confirmButtonColor: "#e20000"
     })
   }
 
   getNextStatement();
 });
 
-falseButton.addEventListener("click", (e) => {
-  let selectedChoice = e.target.innerHTML;
+falseButton.addEventListener("click", (event) => {
+  let selectedChoice = event.target.innerHTML;
 
   if (selectedChoice === correctAnswer) {
     Swal.fire({
-        title: 'Correct!',
-        confirmButtonText: 'Next',
-        confirmButtonColor: '#00af14'
+        title: "Correct!",
+        confirmButtonText: "Next",
+        confirmButtonColor: "#00af14"
     })
     incrementScore(correctAnswerPoints);
   } else {
     Swal.fire({
-        title: 'Wrong!',
-        confirmButtonText: 'Next',
-        confirmButtonColor: '#e20000'
+        title: "Wrong!",
+        confirmButtonText: "Next",
+        confirmButtonColor: "#e20000"
     })
   }
 
