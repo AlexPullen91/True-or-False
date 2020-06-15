@@ -1,6 +1,7 @@
 
 # True or False 
 
+![Multi device Screenshot](https://github.com/AlexPullen91/True-or-False/blob/master/wireframes/true-or-false-mockup.jpg?raw=true)
 
 True or False is a simple quiz app presenting the user with a question. Is it true or false?
 
@@ -150,7 +151,7 @@ Testing for responsiveness and bugs throughout development was carried out with 
 
 ### Issues and Resolutions
 
-* During development I encountered a problem when writing the conditional statement to determine if the correct answer was being selected. False was reliably returned on every instance which turned out to be due to the wrong use of operator.  Because I was comparing string values I changed == to the strict equality operator === and this solved the problem.
+* During development I encountered a problem when writing the conditional statement to determine if the correct answer was being selected. False was reliably returned on every instance which turned out to be due to the wrong use of operator.  Because I was comparing string values I changed ```==``` to the strict equality operator ```===``` and this solved the problem.
 
 ### Known Issues
 
