@@ -3,11 +3,13 @@ window.onload = function () {
     selector: ".background",
     color: "#ffffff",
     connectParticles: true,
-    speed: 0.2
+    speed: 0.2,
+    sizeVariations: 2,
+    minDistance: 100
   });
 };
 
-const statement = document.querySelector("#statement")
+const statement = document.querySelector("#statement");
 const trueButton = document.querySelector("#trueButton");
 const falseButton = document.querySelector("#falseButton");
 const score = document.querySelector("#score");
@@ -33,8 +35,8 @@ fetch("https://opentdb.com/api.php?amount=20&type=boolean")
   .then((loadedStatements) => {
     startGame(loadedStatements.results);
   })
-  .catch(error => {
-    console.error('Error:', error);
+  .catch((error) => {
+    console.error("Error:", error);
   });
 
 /**
@@ -91,17 +93,19 @@ trueButton.addEventListener("click", (event) => {
 
   if (playersChoice === correctAnswer) {
     Swal.fire({
-        title: "Correct!",
-        confirmButtonText: "Next",
-        confirmButtonColor: "#00af14"
+      title: "Correct!",
+      confirmButtonText: "Next",
+      confirmButtonColor: "#00af14",
     });
     increaseScore(correctAnswerPoint);
+    particlesCorrect();
   } else {
     Swal.fire({
-        title: "Wrong!",
-        confirmButtonText: "Next",
-        confirmButtonColor: "#e20000"
-    })
+      title: "Wrong!",
+      confirmButtonText: "Next",
+      confirmButtonColor: "#e20000",
+    });
+    particlesWrong();
   }
 
   getNextStatement();
@@ -116,21 +120,52 @@ falseButton.addEventListener("click", (event) => {
 
   if (playersChoice === correctAnswer) {
     Swal.fire({
-        title: "Correct!",
-        confirmButtonText: "Next",
-        confirmButtonColor: "#00af14"
-    })
+      title: "Correct!",
+      confirmButtonText: "Next",
+      confirmButtonColor: "#00af14",
+    });
     increaseScore(correctAnswerPoint);
+    particlesCorrect();
   } else {
     Swal.fire({
-        title: "Wrong!",
-        confirmButtonText: "Next",
-        confirmButtonColor: "#e20000"
-    })
+      title: "Wrong!",
+      confirmButtonText: "Next",
+      confirmButtonColor: "#e20000",
+    });
+    particlesWrong();
   }
 
   getNextStatement();
 });
+
+const particlesCorrect = () => {
+  Particles.init({
+    speed: 0.7,
+    sizeVariations: 5,
+    minDistance: 150
+  });
+  setTimeout(() => {
+      particlesReset();
+  }, 3000);
+};
+
+const particlesWrong = () => {
+  Particles.init({
+    speed: 0.1,
+    minDistance: 50
+  });
+  setTimeout(() => {
+      particlesReset();
+  }, 3000);
+};
+
+const particlesReset = () => {
+  Particles.init({
+    speed: 0.2,
+    sizeVariations: 2,
+    minDistance: 100
+  });
+};
 
 /**
  * updates scoreAmount variable which each point gained
