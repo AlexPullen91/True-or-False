@@ -66,13 +66,15 @@ trueButton.addEventListener("click", (e) => {
   if (selectedChoice === correctAnswer) {
     Swal.fire({
         title: 'Correct!',
-        confirmButtonText: 'Next'
+        confirmButtonText: 'Next',
+        confirmButtonColor: '#00af14'
     });
     incrementScore(correctAnswerPoints);
   } else {
     Swal.fire({
         title: 'Wrong!',
-        confirmButtonText: 'Next'
+        confirmButtonText: 'Next',
+        confirmButtonColor: '#e20000'
     })
   }
 
@@ -85,13 +87,15 @@ falseButton.addEventListener("click", (e) => {
   if (selectedChoice === correctAnswer) {
     Swal.fire({
         title: 'Correct!',
-        confirmButtonText: 'Next'
+        confirmButtonText: 'Next',
+        confirmButtonColor: '#00af14'
     })
     incrementScore(correctAnswerPoints);
   } else {
     Swal.fire({
         title: 'Wrong!',
-        confirmButtonText: 'Next'
+        confirmButtonText: 'Next',
+        confirmButtonColor: '#e20000'
     })
   }
 
