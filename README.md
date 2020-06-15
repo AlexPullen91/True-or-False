@@ -121,6 +121,9 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 Testing for responsiveness throughout development was carried out with google chrome developer tools and the device toolbar to ensure compatibility on all screen sizes.
 
+* All HTML ran through [W3C validator](https://validator.w3.org/) without any issues.
+* CSS ran through [W3C validation service](https://jigsaw.w3.org/css-validator/validator.html.en) without any issues.
+
 ## Manual Testing
 
 **Submitting a high score**
