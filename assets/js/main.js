@@ -28,17 +28,16 @@ fetch("https://opentdb.com/api.php?amount=20&type=boolean")
     return res.json();
   })
   .then((loadedStatements) => {
-    statements = loadedStatements.results;
-    startGame();
+    startGame(loadedStatements.results);
   })
   .catch((err) => {
     console.log(err);
   });
 
-startGame = () => {
+const startGame = (results) => {
   statementCounter = 0;
   scoreAmount = 0;
-  availableStatements = [...statements];
+  availableStatements = [...results];
   getNextStatement();
   mainHub.classList.remove("hidden");
   loadingText.classList.add("hidden");
@@ -47,8 +46,8 @@ startGame = () => {
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
     localStorage.setItem("mostRecentScore", scoreAmount);
-    // return window.location.assign("/True-or-False/gameOver.html");
-    return window.location.assign("/gameOver.html");
+    // return window.location.assign("/True-or-False/gameover.html");
+    return window.location.assign("/gameover.html");
   }
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
