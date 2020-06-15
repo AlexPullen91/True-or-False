@@ -86,7 +86,8 @@ getNextStatement = () => {
 
 /**
  * adds click event to true button that checks for correct answer
- * awards a point if true then calls next statement
+ * awards a point if true, triggers modal and particles effect
+ * calls next statement
  */
 trueButton.addEventListener("click", (event) => {
   let playersChoice = event.target.innerHTML;
@@ -113,7 +114,8 @@ trueButton.addEventListener("click", (event) => {
 
 /**
  * adds click event to false button that checks for correct answer
- * awards a point if true then calls next statement
+ * awards a point if true, triggers modal and particles effect
+ * calls next statement
  */
 falseButton.addEventListener("click", (event) => {
   let playersChoice = event.target.innerHTML;
@@ -138,6 +140,9 @@ falseButton.addEventListener("click", (event) => {
   getNextStatement();
 });
 
+/**
+ * swells and speeds up the particle effect over 3 seconds
+ */
 const particlesCorrect = () => {
   Particles.init({
     speed: 0.7,
@@ -149,6 +154,9 @@ const particlesCorrect = () => {
   }, 3000);
 };
 
+/**
+ * slows and breaks up the particle effect over 3 seconds
+ */
 const particlesWrong = () => {
   Particles.init({
     speed: 0.1,
@@ -159,6 +167,9 @@ const particlesWrong = () => {
   }, 3000);
 };
 
+/**
+ * resets the particle effect to original state
+ */
 const particlesReset = () => {
   Particles.init({
     speed: 0.2,
