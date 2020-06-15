@@ -21,6 +21,7 @@
     text-align: center;
 }
 
+/* class for particles effect */
 .background {
   position: absolute;
   top: 0;
@@ -92,7 +93,6 @@ form {
 input {
     border: solid 0.5rem #FFFFFF;
     color: #000000;
-    /* box-shadow: 0 0.1rem 1rem 0 #FFFFFF; */
 }
 
 .high-scores-list {
@@ -100,6 +100,7 @@ input {
     padding: 1rem 0 2rem 0;
 }
 
+/* Hides the game whilst loading */
 .hidden {
     display: none;
 }
