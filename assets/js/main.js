@@ -13,13 +13,15 @@ const falseButton = document.querySelector("#falseButton");
 const score = document.querySelector("#score");
 const loadingText = document.querySelector("#loadingText");
 const mainHub = document.querySelector("#mainHub");
+const maxStatements = 20;
+const correctAnswerPoints = 1;
 
+let availableStatements = [];
+let statements = [];
 let currentStatement = {};
 let statementCounter = 0;
-let availableStatements = [];
 let scoreAmount = 0;
 
-let statements = [];
 
 fetch("https://opentdb.com/api.php?amount=20&type=boolean")
   .then((res) => {
@@ -41,9 +43,6 @@ startGame = () => {
   mainHub.classList.remove("hidden");
   loadingText.classList.add("hidden");
 };
-
-const maxStatements = 20;
-const correctAnswerPoints = 1;
 
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
@@ -112,7 +111,7 @@ falseButton.addEventListener("click", (e) => {
   getNextStatement();
 });
 
-incrementScore = (num) => {
+const incrementScore = (num) => {
   scoreAmount += num;
   score.innerHTML = `Score: ${scoreAmount} out of 20`;
 };
