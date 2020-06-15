@@ -14,7 +14,7 @@ const score = document.querySelector("#score");
 const loadingText = document.querySelector("#loadingText");
 const mainHub = document.querySelector("#mainHub");
 const maxStatements = 20;
-const correctAnswerPoints = 1;
+const correctAnswerPoint = 1;
 
 let availableStatements = [];
 let statements = [];
@@ -22,7 +22,10 @@ let currentStatement = {};
 let statementCounter = 0;
 let scoreAmount = 0;
 
-
+/**
+ * pulls questions from an API and passes them
+ * into start game function
+ */
 fetch("https://opentdb.com/api.php?amount=20&type=boolean")
   .then((res) => {
     return res.json();
@@ -30,10 +33,14 @@ fetch("https://opentdb.com/api.php?amount=20&type=boolean")
   .then((loadedStatements) => {
     startGame(loadedStatements.results);
   })
-  .catch((err) => {
-    console.log(err);
+  .catch(error => {
+    console.error('Error:', error);
   });
 
+/**
+ * loads questions, sets score and counter to 0
+ * calls next statement function and hides loader / reveals game
+ */
 const startGame = (results) => {
   statementCounter = 0;
   scoreAmount = 0;
@@ -43,6 +50,13 @@ const startGame = (results) => {
   loadingText.classList.add("hidden");
 };
 
+/**
+ * grabs the next statement until the cap is reached
+ * sets the players score and moves onto the game over page.
+ * randomly sorts the statements and displays them through the DOM
+ * assigns correct and wrong answer to relevant buttons
+ * removes a question from the array each time it's called
+ */
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
     localStorage.setItem("playersScore", scoreAmount);
@@ -68,16 +82,20 @@ getNextStatement = () => {
   availableStatements.splice(statementIndex, 1);
 };
 
+/**
+ * adds click event to true button that checks for correct answer
+ * awards a point if true then calls next statement
+ */
 trueButton.addEventListener("click", (event) => {
-  let selectedChoice = event.target.innerHTML;
+  let playersChoice = event.target.innerHTML;
 
-  if (selectedChoice === correctAnswer) {
+  if (playersChoice === correctAnswer) {
     Swal.fire({
         title: "Correct!",
         confirmButtonText: "Next",
         confirmButtonColor: "#00af14"
     });
-    incrementScore(correctAnswerPoints);
+    increaseScore(correctAnswerPoint);
   } else {
     Swal.fire({
         title: "Wrong!",
@@ -89,16 +107,20 @@ trueButton.addEventListener("click", (event) => {
   getNextStatement();
 });
 
+/**
+ * adds click event to false button that checks for correct answer
+ * awards a point if true then calls next statement
+ */
 falseButton.addEventListener("click", (event) => {
-  let selectedChoice = event.target.innerHTML;
+  let playersChoice = event.target.innerHTML;
 
-  if (selectedChoice === correctAnswer) {
+  if (playersChoice === correctAnswer) {
     Swal.fire({
         title: "Correct!",
         confirmButtonText: "Next",
         confirmButtonColor: "#00af14"
     })
-    incrementScore(correctAnswerPoints);
+    increaseScore(correctAnswerPoint);
   } else {
     Swal.fire({
         title: "Wrong!",
@@ -110,7 +132,11 @@ falseButton.addEventListener("click", (event) => {
   getNextStatement();
 });
 
-const incrementScore = (num) => {
+/**
+ * updates scoreAmount variable which each point gained
+ * sets the score text dynamically
+ */
+const increaseScore = (num) => {
   scoreAmount += num;
-  score.innerHTML = `Score: ${scoreAmount} out of 20`;
+  score.innerText = `Score: ${scoreAmount} out of 20`;
 };
