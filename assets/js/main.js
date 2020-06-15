@@ -39,7 +39,7 @@ const correctAnswerPoints = 1;
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
     localStorage.setItem("mostRecentScore", scoreAmount);
-    return window.location.assign("/gameOver.html");
+    return window.location.assign("/True-or-False/gameOver.html");
   }
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
