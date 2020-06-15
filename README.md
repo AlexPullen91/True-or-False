@@ -43,7 +43,6 @@ Provide a simple but engaging user experience for someone interested in playing 
 * *"As a competitive player I expect to be able to log my scores and compare them with those of others"*
 * *"As a user I expect real time feedback to my input when I interact with the site"*
 * *"As a user I expect to be able to play multiple times with a refreshed set of questions each time"*
-* *"As a user I expect to have the option to leave a game in the middle"*
 * *"As a user I expect to have the option to play again immediately when I finish"*
 
 ---
@@ -51,7 +50,6 @@ Provide a simple but engaging user experience for someone interested in playing 
 ## Design Choices
 * User interface situated centrally in the screen leaving lots of space outside of it to be used by background effect.
 * [Particle](https://marcbruederlin.github.io/particles.js/) effect in the background to create interesting visual for the user reminiscent of DNA structures and sci-fi style interfaces.
-* Particle effect responds to user input to increase feeling of interactivity. Speed and size swell with correct or incorrect answers.
 * Less is more approach to avoid cluttering the UI with unnecessary features and icons.
 * Indigo dye #1a4e6e and Honolulu blue #2c6e96 combine to make a [gradient background](https://cssgradient.io/)
 * White #FFFFFF for the particle effect and font color.
@@ -73,13 +71,13 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 * Main menu with play again button and high scores button.
 * Game section featuring [API generated questions](https://opentdb.com/) presenting user with clickable option between true or false.
-* Particle effect background responds to user input.
 * Mousing over buttons to give hover effect signalling interactivity to users.
 * Score saving system allowing users to compare scores before and after games.
 * Social media links at the bottom of the page linking to author.
 
 #### Potential Future features
 
+* Particle effect to respond to user input to increase feeling of interactivity.
 * Choice of topics
 * Audio and audio feedback to user input
 
