@@ -99,14 +99,12 @@ trueButton.addEventListener("click", (event) => {
       confirmButtonColor: "#00af14",
     });
     increaseScore(correctAnswerPoint);
-    particlesCorrect();
   } else {
     Swal.fire({
       title: "Wrong!",
       confirmButtonText: "Next",
       confirmButtonColor: "#e20000",
     });
-    particlesWrong();
   }
   getNextStatement();
 });
@@ -126,56 +124,15 @@ falseButton.addEventListener("click", (event) => {
       confirmButtonColor: "#00af14",
     });
     increaseScore(correctAnswerPoint);
-    particlesCorrect();
   } else {
     Swal.fire({
       title: "Wrong!",
       confirmButtonText: "Next",
       confirmButtonColor: "#e20000",
     });
-    particlesWrong();
   }
   getNextStatement();
 });
-
-/**
- * 
-  swells and speeds up the particle effect over 3 seconds
- */
-const particlesCorrect = () => {
-  Particles.init({
-    speed: 0.7,
-    sizeVariations: 5,
-    minDistance: 150,
-  });
-  setTimeout(() => {
-    particlesReset();
-  }, 3000);
-};
-
-/**
- * slows and breaks up the particle effect over 3 seconds
- */
-const particlesWrong = () => {
-  Particles.init({
-    speed: 0.1,
-    minDistance: 50,
-  });
-  setTimeout(() => {
-    particlesReset();
-  }, 3000);
-};
-
-/**
- * resets the particle effect to original state
- */
-const particlesReset = () => {
-  Particles.init({
-    speed: 0.2,
-    sizeVariations: 2,
-    minDistance: 100,
-  });
-};
 
 /**
  * updates scoreAmount variable which each point gained
