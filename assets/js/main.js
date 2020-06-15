@@ -97,10 +97,11 @@ trueButton.addEventListener("click", (event) => {
       confirmButtonText: "Next",
       confirmButtonColor: "#00af14",
     });
-    inc    particlesCorrect();
+    particlesCorrect();
   } else {
     Swal.fire({
-      titl      confirmButtonText: "Next",
+      title: "Wrong!",
+      confirmButtonText: "Next",
       confirmButtonColor: "#e20000",
     });
     particlesWrong();
