@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-:root {
-    background: rgb(26,78,110);
-    background: linear-gradient(90deg, rgba(26,78,110,1) 10%, rgba(44,110,150,1) 50%, rgba(26,78,110,1) 90%);;
-    font-size: 62.5%;
-}
 
-* {
-    font-family: 'Roboto Mono', monospace;
-    color: #FFFFFF;
+html {
+    font-size: 62.5%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFF;
+    background: rgb(26,78,110);
+    background: linear-gradient(90deg, rgba(26,78,110,1) 10%, rgba(44,110,150,1) 50%, rgba(26,78,110,1) 90%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: solid 0.5rem #FFFFFF;
+    color: #000000;
 }
 
 .heading-style {
@@ -60,6 +72,7 @@
 
 .btn {
     border: solid 0.1rem #FFFFFF;
+    color: #FFFFFF;
     margin: 0.8rem;
     padding: 0.2rem 0.6rem 0.2rem 0.6rem; ;
     background-color: rgba(26,78,110,1);
@@ -82,17 +95,6 @@
     font-size: 3rem;
     margin: 2rem;
     text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input {
-    border: solid 0.5rem #FFFFFF;
-    color: #000000;
 }
 
 .high-scores-list {
