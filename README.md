@@ -96,6 +96,7 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 ## Libraries
 
 * [Google Fonts](https://fonts.google.com/)
+* [sweetalert2](https://sweetalert2.github.io/)
 
 ---
 
@@ -138,16 +139,16 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ## Credits
 
+
 ### Content
 
 
 ### Media
 
 
-
 ### Code
 
-
+* [sweetalert2](https://sweetalert2.github.io/) for modals
 
 ### Acknowledgements
 
