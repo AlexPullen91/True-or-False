@@ -102,32 +102,6 @@ falseButton.addEventListener("click", (e) => {
   getNextStatement();
 });
 
-// trueButton.addEventListener("click", (e) => {
-//   let selectedChoice = e.target.innerHTML;
-
-//   if(selectedChoice === correctAnswer) {
-//       alert("Correct Answer!");
-//       incrementScore(correctAnswerPoints);
-//     } else {
-//         alert("Wrong Answer!");
-//     }
-
-//   getNextStatement();
-// });
-
-// falseButton.addEventListener("click", (e) => {
-//   let selectedChoice = e.target.innerHTML;
-
-//   if(selectedChoice === correctAnswer) {
-//       alert("Correct Answer!");
-//       incrementScore(correctAnswerPoints);
-//     } else {
-//         alert("Wrong Answer!");
-//     }
-
-//   getNextStatement();
-// });
-
 incrementScore = (num) => {
   scoreAmount += num;
   score.innerHTML = `Score: ${scoreAmount}`;
