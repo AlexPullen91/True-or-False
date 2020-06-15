@@ -1,3 +1,12 @@
+window.onload = function () {
+  Particles.init({
+    selector: ".background",
+    color: "#ffffff",
+    connectParticles: true,
+    speed: 0.2
+  });
+};
+
 const statement = document.getElementById("statement");
 const trueButton = document.getElementById("trueButton");
 const falseButton = document.getElementById("falseButton");
