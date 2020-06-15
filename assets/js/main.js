@@ -7,12 +7,12 @@ window.onload = function () {
   });
 };
 
-const statement = document.getElementById("statement");
-const trueButton = document.getElementById("trueButton");
-const falseButton = document.getElementById("falseButton");
-const score = document.getElementById("score");
-const loadingText = document.getElementById("loadingText");
-const mainHub = document.getElementById("mainHub");
+const statement = document.querySelector("#statement")
+const trueButton = document.querySelector("#trueButton");
+const falseButton = document.querySelector("#falseButton");
+const score = document.querySelector("#score");
+const loadingText = document.querySelector("#loadingText");
+const mainHub = document.querySelector("#mainHub");
 
 let currentStatement = {};
 let statementCounter = 0;
@@ -48,7 +48,8 @@ const correctAnswerPoints = 1;
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
     localStorage.setItem("mostRecentScore", scoreAmount);
-    return window.location.assign("/True-or-False/gameOver.html");
+    // return window.location.assign("/True-or-False/gameOver.html");
+    return window.location.assign("/gameOver.html");
   }
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
