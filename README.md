@@ -4,6 +4,8 @@
 
 True or False is a simple quiz app presenting the user with a question. Is it true or false?
 
+Click [here](https://alexpullen91.github.io/True-or-False/) to play
+
 
 ---
 
