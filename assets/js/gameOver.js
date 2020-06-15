@@ -1,9 +1,9 @@
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const mostRecentScore = localStorage.getItem("mostRecentScore");
+const playersScore = localStorage.getItem("playersScore");
 const playerName = document.querySelector("#playerName");
 const youScored = document.querySelector("#youScored");
 const saveScoreBtn = document.querySelector("#saveScoreBtn");
-youScored.innerText = `You scored: ${mostRecentScore}`;
+youScored.innerText = `You scored: ${playersScore}`;
 
 playerName.addEventListener("keyup", () => {
   saveScoreBtn.disabled = !playerName.value;
@@ -12,9 +12,13 @@ playerName.addEventListener("keyup", () => {
 saveHighScore = (event) => {
   event.preventDefault();
   const score = {
-    score: mostRecentScore,
+    score: playersScore,
     name: playerName.value,
   };
+
+  saveScoreBtn.disabled = true;
+  playerName.disabled = true;
+  saveScoreBtn.innerHTML = `Saved!`;
 
   highScores.push(score);
   highScores.sort((a, b) => b.score - a.score);

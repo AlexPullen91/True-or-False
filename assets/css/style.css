@@ -26,6 +26,10 @@ input {
     color: #000000;
 }
 
+input[disabled] {
+    color: #FFFFFF;
+}
+
 .heading-style {
     font-size: 4rem;
     margin: 1rem;

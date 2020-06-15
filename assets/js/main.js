@@ -45,7 +45,7 @@ const startGame = (results) => {
 
 getNextStatement = () => {
   if (availableStatements.length === 0 || statementCounter > maxStatements) {
-    localStorage.setItem("mostRecentScore", scoreAmount);
+    localStorage.setItem("playersScore", scoreAmount);
     // return window.location.assign("/True-or-False/gameover.html");
     return window.location.assign("/gameover.html");
   }
