@@ -121,7 +121,15 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 Testing for responsiveness throughout development was carried out with google chrome developer tools and the device toolbar to ensure compatibility on all screen sizes.
 
-## Manual Testing
+## Manual Testing
+
+**Submitting a high score**
+
+    1. Moused over username field to see cursor change and signal typing is available.
+    2. Clicked to enter and typed in "name".
+    3. Moused over save to see cursor has changed to pointer instead of no entry sign and then clicked.
+    4. Moused over to high scores button and clicked. Page changes to highscores.html and "name" is correctly displayed.
+
 
 ### Issues and Resolutions
 
