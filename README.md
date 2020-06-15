@@ -134,6 +134,29 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ## Deployment
 
+True or False was developed on GitPod, using git and GitHub to host the repository.
+
+__When deploying True or False using GitHub Pages be sure to follow these steps:__
+
+1. Navigate to '/AlexPullen91/True-or-False' or alternatively click [here](https://github.com/AlexPullen91/True-or-False).
+2. In the top navigation click on 'settings'.
+3. Scroll down to the GitHub Pages area.
+4. Select 'Master Branch' from the 'Source' dropdown menu.
+5. Click to confirm my selection.
+6. True or False should now be live on GitHub Pages.
+
+__In order to run True or False locally be sure to follow these steps whilst still on Github:__
+
+1. Navigate to '/AlexPullen91/True-or-False' or alternatively click [here](https://github.com/AlexPullen91/True-or-False)..
+2. Click the green 'Clone or Download' button.
+3. Copy the url in the dropdown box.
+4. Using your IDE of choice open up your preferred terminal.
+5. Navigate to your desired file location.
+6. Copy the following code and input it into your terminal to clone True or False.
+
+```git clone https://github.com/AlexPullen91/True-or-False.git```
+
+---
 
 ---
 
