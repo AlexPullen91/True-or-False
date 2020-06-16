@@ -173,7 +173,14 @@ This test determines if the high scores sort and display a maximum of 10 scores 
 
 ### Issues and Resolutions
 
-* During development I encountered a problem when writing the conditional statement to determine if the correct answer was being selected. False was reliably returned on every instance which turned out to be due to the wrong use of operator.  Because I was comparing string values I changed ```==``` to the strict equality operator ```===``` and this solved the problem.
+* During development I encountered a problem when writing the conditional statement to determine if the correct answer was being selected. 
+    * I began investigating this issue with ```console.log(correctAnswer === true)``` which was reliabily returning false even when I knew the answer was true.
+    * Upon closer inspection I realised I was actually comparing a string value ```"True"``` stored in ```correctAnswer``` rather than the boolean ```true``` 
+    * Using the strict equality operator ```===``` against ```"True"``` solved this problem.
+
+* During development I noticed some statements weren't loading in properly.
+    * For example, ```"&quot;Windows NT&quot; is a monolithic kernel."```
+    * [This](https://stackoverflow.com/questions/24602154/explain-what-quot-means) post I found explains that it's [unicode](http://www.fileformat.info/info/unicode/char/0022/index.htm) for quotation marks. I changed out ```innerText``` for ```innerHTML``` which solved the problem.
 
 ### Known Issues
 
@@ -240,5 +247,9 @@ __In order to run True or False locally be sure to follow these steps whilst sti
 
 ### Acknowledgements
 
-* My mentor [Simen Daehlin](https://github.com/Eventyret) who was very generous with his time and support on this project.
+* My mentor [Simen Daehlin](https://github.com/Eventyret), always very generous with his time, support and encouragement.
+
+### Disclaimer
+
+*This site is intended for educational purposes only.*
 
