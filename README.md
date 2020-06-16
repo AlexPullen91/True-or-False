@@ -136,8 +136,10 @@ Testing for responsiveness and bugs throughout development was carried out with 
 
 ## Manual Testing
 
-*Test case: Save button disabling*
+*Test case:* **Save button disabling**
     
+    This test determines whether or not the save button is disabled by default and with/without user interaction.
+
     1. Moused over save button to see cancel sign instead of pointer cursor or hover animation.
     2. Clicked save button multiple times and nothing happens.
     3. Moused over to input field, entered "Test".
@@ -146,7 +148,9 @@ Testing for responsiveness and bugs throughout development was carried out with 
 
     Verdict: Working as intended
 
-*Test Case: Submitting a high score*
+*Test Case:* **Submitting a high score**
+
+    This test determines if the user can successfully submit and record a high score.
 
     1. Moused over username field to see cursor change and signal typing is available.
     2. Clicked input field and typed in "name".
@@ -155,8 +159,10 @@ Testing for responsiveness and bugs throughout development was carried out with 
 
     Verdict: Working as intended
 
-*Test Case: High Scores sort and cap at 10 / statement loading and answering functionality*
+*Test Case:* **High Scores sort and cap at 10 / statement loading and answer validation**
     
+    This test determines if the high scores sort and display a maximum of 10 scores highest to lowest and if statements load and are answered correctly.
+
     1. Played through the game 10 games logging with a unique name and different score each time.
     2. A variety of different statements (same ones sometimes repeated) load from the API and correct/wrong answers are accurately detected each time.
     3. On 11th playthrough I ensured score was high enough to place and submitted with unique name.
