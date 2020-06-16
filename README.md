@@ -74,14 +74,14 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 * Main menu with play button and high scores button that navigates to their respective pages.
 * Game section featuring [API generated questions](https://opentdb.com/) presenting user with clickable option between true or false.
-* Particle effect *responds to user input* to increase feeling of interactivity.
-* The effect briefly swells and speeds up when the correct answer is given. It slows down and disperses slightly when the wrong answer is given.
 * Modal pop ups also inform the user if they got it right or wrong.
 * Mousing over buttons to give hover effect signalling interactivity to users.
 * Scores can be saved to local storage with their user name which then feature on seperate high scores page.
 
 #### Potential Future features
 
+* Particle effect *responds to user input* to increase feeling of interactivity.
+* The effect briefly swells and speeds up when the correct answer is given. It slows down and disperses slightly when the wrong answer is given.
 * Choice of specific topics.
 * Countdown timer to give sense of urgency.
 * Audio and audio feedback to user input.
@@ -121,15 +121,13 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 ## Testing
 
-Testing for responsiveness and bugs throughout development was carried out with google chrome developer tools, and the device toolbar to ensure compatibility on all screen sizes.
+Testing for responsiveness and bugs throughout development was carried out with google chrome developer tools and the device toolbar to ensure compatibility on all screen sizes.
 
-* True or False has been tested on an iPhone X, Macbook Pro and Windows 10 iOTA, working as intended on the following browsers:
+* True or False has been tested on an iPhone X, Macbook Pro and Windows 10 iOTA and is working as intended on the following browsers:
     * Google Chrome
     * Microsoft edge
     * Safari
     * Mozilla Firefox
-
-    
 
 * All HTML ran through [W3C validator](https://validator.w3.org/) without any issues.
 * CSS ran through [W3C validation service](https://jigsaw.w3.org/css-validator/validator.html.en) without any issues.
@@ -184,7 +182,7 @@ This test determines if the high scores sort and display a maximum of 10 scores 
 
 ### Known Issues
 
-* The particle effect is very taxing on the site's performance and due to time constraints I've unfortunately had to scale back initial ambitions to enchance the interactivity around this effect. See below an example of one of the triggered functions in the button event listeners that would swell and speed up the effect on correct answers. 
+* The particle effect is very taxing on the site's performance and due to time constraints I've unfortunately had to scale back initial ambitions to enchance the interactivity based around this effect. See below an example of one of the triggered functions in the button event listeners that would swell and speed up the effect on correct answers. 
 
 ```
 const particlesCorrect = () => {
@@ -199,9 +197,9 @@ const particlesCorrect = () => {
 };
 ```
 
-there was a similar function ```particlesWrong()``` to slow down and disperse the particles on wrong answers and ```particlesReset()``` that returned the effect to it's default state. 
+a similar function ```particlesWrong()``` was used to slow down and disperse the particles on wrong answers and then ```particlesReset()``` returned the effect to it's default state. 
 
-After only a couple questions performance tanked and particularly so for mobile devices therefore I opted to leave the particles running in the background as is. As I had planned for it to feature more prominently this is something that I'd like to revisit in the future.
+After only a couple questions performance tanked and particularly so for mobile devices therefore I opted to remove these functions and leave the particles running in the background. As I had planned to feature the particle effect more prominently this is something that I'd like to revisit in the future.
 
 ---
 
