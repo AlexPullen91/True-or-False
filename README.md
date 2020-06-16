@@ -3,6 +3,7 @@
 
 ![Multi device Screenshot](https://github.com/AlexPullen91/True-or-False/blob/master/wireframes/true-or-false-mockup.jpg?raw=true)
 
+
 True or False is a simple quiz app presenting the user with a question. Is it true or false?
 
 ---
@@ -135,18 +136,33 @@ Testing for responsiveness and bugs throughout development was carried out with 
 
 ## Manual Testing
 
-**Submitting a high score**
+*Test case: Save button disabling*
+    
+    1. Moused over save button to see cancel sign instead of pointer cursor or hover animation.
+    2. Clicked save button multiple times and nothing happens.
+    3. Moused over to input field, entered "Test".
+    4. Moused back to save button and pointer has replaced cancel sign.
+    5. Clicked save and text changed to "Saved!" and button can no longer be clicked.
+
+    Verdict: Working as intended
+
+*Test Case: Submitting a high score*
 
     1. Moused over username field to see cursor change and signal typing is available.
-    2. Clicked to enter and typed in "name".
-    3. Moused over save to see cursor has changed to pointer instead of no entry sign and then clicked.
-    4. Moused over to high scores button and clicked. Page changes to highscores.html and "name" is correctly displayed.
+    2. Clicked input field and typed in "name".
+    3. Moused over save button to see cursor has changed to pointer instead of cancel sign and then clicked, seeing text changed to "Saved!".
+    4. Moused over to high scores button and clicked. Page changes to highscores.html and "name" is correctly displayed along with score.
 
-**High Scores sort and cap at 10**
+    Verdict: Working as intended
+
+*Test Case: High Scores sort and cap at 10 / statement loading and answering functionality*
     
     1. Played through the game 10 games logging with a unique name and different score each time.
-    2. On 11th playthrough ensured score was high enough to place and submitted with unique name.
-    3. Lowest score drops out in in place of the latest and confirms functionality.
+    2. A variety of different statements (same ones sometimes repeated) load from the API and correct/wrong answers are accurately detected each time.
+    3. On 11th playthrough I ensured score was high enough to place and submitted with unique name.
+    4. Lowest score drops out in in place of the latest and confirms functionality.
+
+    Verdict: Working as intended
 
 
 ### Issues and Resolutions
