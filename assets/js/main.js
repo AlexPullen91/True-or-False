@@ -68,7 +68,7 @@ getNextStatement = () => {
   statementCounter++;
   const statementIndex = Math.floor(Math.random() * availableStatements.length);
   currentStatement = availableStatements[statementIndex];
-  statement.innerHTML = currentStatement.question;
+  statement.innerHTML = `${statementCounter}/20: ${currentStatement.question}`
 
   correctAnswer = currentStatement.correct_answer;
   wrongAnswer = currentStatement.incorrect_answers[0];

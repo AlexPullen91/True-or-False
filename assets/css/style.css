@@ -53,7 +53,7 @@ input[disabled] {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+    max-width: 70rem;
     margin: 0 auto;
 }
 
@@ -75,6 +75,7 @@ input[disabled] {
 }
 
 .btn {
+    font-family: 'Roboto Mono', monospace;
     border: solid 0.1rem #FFFFFF;
     color: #FFFFFF;
     margin: 0.8rem;
@@ -82,6 +83,8 @@ input[disabled] {
     background-color: rgba(26,78,110,1);
     font-size: 2rem;
     text-decoration: none;
+    min-width: 16rem;
+    text-align: center;
 }
 
 .btn:hover {
@@ -96,7 +99,7 @@ input[disabled] {
 }
 
 .question-style {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: 2rem;
     text-align: center;
 }
