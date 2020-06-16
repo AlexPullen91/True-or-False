@@ -163,10 +163,10 @@ This test determines if the user can successfully submit and record a high score
 
 This test determines if the high scores sort and display a maximum of 10 scores highest to lowest and if statements load and are answered correctly.
 
-    1. Played through the game 10 games logging with a unique name and different score each time.
+    1. Played through the game 10 times logging with a unique name and different score each time.
     2. A variety of different statements (same ones sometimes repeated) load from the API and correct/wrong answers are accurately detected each time.
     3. On 11th playthrough I ensured score was high enough to place and submitted with unique name.
-    4. Lowest score drops out in in place of the latest and confirms functionality.
+    4. Lowest score drops out in place of the latest addition and confirms functionality.
 
     Verdict: Working as intended
 
