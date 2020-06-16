@@ -74,8 +74,8 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 
 * Main menu with play button and high scores button that navigates to their respective pages.
 * Game section featuring [API generated questions](https://opentdb.com/) presenting user with clickable option between true or false.
-* Modal pop ups also inform the user if they got it right or wrong.
-* Mousing over buttons to give hover effect signalling interactivity to users.
+* Modal pop ups also inform the user if they got it right or wrong which the user can dismiss by clicking next or just outside of the modal.
+* Mousing over buttons gives hover effect signalling interactivity to users.
 * Scores can be saved to local storage with their user name which then feature on seperate high scores page.
 
 #### Potential Future features
@@ -85,7 +85,7 @@ You can find my wireframes [here](https://github.com/AlexPullen91/True-or-False/
 * Choice of specific topics.
 * Countdown timer to give sense of urgency.
 * Audio and audio feedback to user input.
-* More permanent way to save and compare scores globally.
+* More permanent way to save and compare scores across devices and globally.
 
 ---
 ## Technologies Used
@@ -171,6 +171,11 @@ This test determines if the high scores sort and display a maximum of 10 scores 
 
 ### Issues and Resolutions
 
+* During development I had trouble assigning the value stored in ```incorrect_answers``` to my ```wrongAnswer``` variable.
+    * By utilising ```debugger``` in chrome dev tools I could step through the code methodically and examine with greater clarity what exactly was happening.
+    * It became apparent that ```incorrect_answers``` was storing the value within an array unlike ```correct_answer``` and therefore I was simply missing a zero index from my code ```[0]```.
+    * It would seem that this is all because the API provides a multiple choice option for questions and there would normally be 2 other wrong answers stored in this array.
+
 * During development I encountered a problem when writing the conditional statement to determine if the correct answer was being selected. 
     * I began investigating this issue with ```console.log(correctAnswer === true)``` which was reliabily returning false even when I knew the answer was true.
     * Upon closer inspection I realised I was actually comparing a string value ```"True"``` stored in ```correctAnswer``` rather than the boolean ```true``` 
@@ -181,6 +186,10 @@ This test determines if the high scores sort and display a maximum of 10 scores 
     * [This](https://stackoverflow.com/questions/24602154/explain-what-quot-means) post I found explains that it's [unicode](http://www.fileformat.info/info/unicode/char/0022/index.htm) for quotation marks. I changed out ```innerText``` for ```innerHTML``` which solved the problem.
 
 ### Known Issues
+
+* Some of the statements loaded in from the API feature extremely long words which disrupts the layout on smaller screens. I've attempted ```word-wrap: break-word``` to remedy this but have been unsuccessful so far. Needs further investigation.
+
+* On mobile devices the particles effect can occasionally get squashed up to the top of the screen and won't fill the entire background. Needs further investigation. 
 
 * The particle effect is very taxing on the site's performance and due to time constraints I've unfortunately had to scale back initial ambitions to enchance the interactivity based around this effect. See below an example of one of the triggered functions in the button event listeners that would swell and speed up the effect on correct answers. 
 
@@ -200,6 +209,7 @@ const particlesCorrect = () => {
 a similar function ```particlesWrong()``` was used to slow down and disperse the particles on wrong answers and then ```particlesReset()``` returned the effect to it's default state. 
 
 After only a couple questions performance tanked and particularly so for mobile devices therefore I opted to remove these functions and leave the particles running in the background. As I had planned to feature the particle effect more prominently this is something that I'd like to revisit in the future.
+
 
 ---
 
